@@ -20,7 +20,7 @@
   display: block;
   width: 130px; /*largura maxima*/
   height: 100px; /*altura maxima*/
-  background: url(img-portifolio/detalhe.svg) no-repeat center; /*fundo */
+  background: url(/img-portifolio/detalhe.svg) no-repeat center; /*fundo */
   position: absolute; /*possição */
   top: -15px; /*topo*/
   left: -40px; /*esquerda*/

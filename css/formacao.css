@@ -112,7 +112,7 @@
 }
 
 .idiomas h3::before{
-  background: url(img-portifolio/idiomas.svg) no-repeat center center;
+  background: url(/img-portifolio/idiomas.svg) no-repeat center center;
 }
 
 .formacao-extra li{
