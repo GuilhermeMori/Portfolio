@@ -1,5 +1,7 @@
 <h1>Projeto Portifólio 📇</h1>
 <p> Projeto desenvolvido para simular um web-site em formato de portifólio.</p>
+<p>O site funciona de maneira responsiva, ao diminuir o tamanho da tela, <br>ele irá se adaptando para facilitar a visualização e leitura do usuário</p>
+
 
 ### Tecnologias Utilizadas:
 ![CSS](https://img.shields.io/badge/-CSS-0D1117?style=for-the-badge&logo=CSS3&logoColor=1572B6&labelColor=0D1117)&nbsp;
