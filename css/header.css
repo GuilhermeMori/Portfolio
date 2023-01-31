@@ -1,0 +1,36 @@
+.header{
+  max-width: 12000px;/*limitiar a largura do site*/
+  padding: 40px 20px; /*utilizamos quando está grudado nos cantos*/
+  margin: 0 auto;/* significa que terá 0px no top ou bottom e automatico as laterais*/
+  display: flex; /*deixar um item ao lado do outro*/
+  justify-content: space-between;/*colocar um elemento em cada ponta*/
+  align-items: center; /*alinhar ao centro*/
+}
+
+.header-menu{
+  display: flex;/*deixar um item ao lado do outro*/
+  gap: 10px;/*distancia de um item para o outro*/
+  flex-wrap: wrap; /*quebrar o item e ir um embaixo do outro*/
+  justify-content: center;/*alinhar itens ao centro*/
+}
+
+.header-menu a{
+  font-size: 1.125rem; /*tamanho da fonte*/
+  line-height: 1.3; /*tamanho da linha*/
+  padding: 10px 20px; /*aumentar área de contato, recomentavel sempre que utilizar links*/
+  text-decoration: none; /*tirar o underline*/
+  color: #141414;/*cor fonte*/
+  display: block;
+}
+/*Reponsivo: só ira funcionar quando estiver com a largura de tela inferior a largura estipulada*/
+@media(max-width:800px){
+  .header{
+    flex-direction: column; /*direcionar para colunas*/
+    gap: 40px;/*distancia de um item para o outro*/
+    padding: 20px; /*aumentar a area de contato*/
+  }
+  .header a{
+    background: #f5f5f5; /*cor de fundo */
+    border-radius: 4px; /*arredondar bordar*/
+  }
+}

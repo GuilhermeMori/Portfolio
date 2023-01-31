@@ -1,0 +1,66 @@
+.introducao{
+  max-width: 1200px; /*maximo de largura*/
+  padding: 40px 20px;  /*largura interna para nao ficar colocado nas bordas*/
+  margin: 0 auto; /*margem 0 cima/baixo e automatica esquerda/direita*/
+  display: grid; /*estilo do display*/
+  grid-template-columns: 1fr 2fr;
+  gap: 100px; /*espaçamento*/
+  align-items: center; /*alinhamento*/
+}
+
+.introducao h1{
+  font-size: 4.5rem; /*tamanho da fonte*/
+  line-height: 1.125; /*altura da linha*/
+  margin-bottom: 30px; /*margem referente ao topo*/
+  position: relative; /*posição*/
+}
+
+.introducao h1::before{
+  content: ""; /*Sempre que utilzamos after/before é necessario colcar*/
+  display: block;
+  width: 130px; /*largura maxima*/
+  height: 100px; /*altura maxima*/
+  background: url(img-portifolio/detalhe.svg) no-repeat center; /*fundo */
+  position: absolute; /*possição */
+  top: -15px; /*topo*/
+  left: -40px; /*esquerda*/
+  z-index: -1; /*Joga o elemento para tras*/
+}
+
+.introducao p{
+  font-size: 1.5rem; /*tamanho da fonte*/
+  color: #525252; /*cor*/
+}
+
+/*Reponsivo, só irar ativar abaixo dos 1000px*/
+@media (max-width: 1000px){
+  .introducao h1{
+    font-size: 3rem;
+  }
+}
+
+/*Reponsivo, só irar ativar abaixo dos 800px*/
+@media (max-width:800px){
+  .introducao{
+    grid-template-columns: 1fr 1fr; /*tamanho das colunas no grid*/
+    gap: 40px; /*tamanho do espaçamento*/
+  }
+  .introducao h1{
+    font-size: 2rem; /*tamanho da fonte no responsivo*/
+  }
+  .introducao h1::before{
+    width: 30px; /*largura do detalhe do fundo no responsivo*/
+    height: 10px;/*altura do detalhe do fundo no responsivo*/
+    left: 0px; /* posição a esquerda no responsivo*/
+  }
+}
+
+/*Reponsivo, só irar ativar abaixo dos 400px*/
+@media (max-width: 400px){
+  .introducao{
+    grid-template-columns: 1fr; /*tamanho das colunas no grid*/
+  }
+  .introducao img{
+    display: none; /*retirar a img*/
+  }
+}
